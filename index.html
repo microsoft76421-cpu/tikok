@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikTok Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <i class="fa-brands fa-tiktok"></i>
+      <span>TikTok</span>
+    </div>
+    <a href="#" class="help-link">
+      <i class="fa-regular fa-circle-question"></i> Feedback and help
+    </a>
+  </header>
+
+  <!-- Main Login Container -->
+  <main class="main-container">
+    <div class="login-card">
+      <h2>Log in</h2>
+      <p id="subtitle-text" style="text-align: center; color: #8a8a8a; font-size: 13px; margin-bottom: 12px;"></p>
+
+      <!-- Dynamic Message Area -->
+      <div id="message" style="font-size: 13px; margin-bottom: 10px; text-align: center;"></div>
+
+      <form id="loginForm">
+        <!-- Step 1: Email/Username -->
+        <div id="step-email">
+          <div class="form-header">
+            <label>Email or username</label>
+            <a href="#" class="sub-link">Log in with phone</a>
+          </div>
+          <div class="input-box">
+            <input type="text" id="email" placeholder="Email or username" autocomplete="off">
+            <i class="fa-solid fa-user-gear input-icon"></i>
+          </div>
+        </div>
+
+        <!-- Step 2: Password (hidden by default) -->
+        <div id="step-password" style="display: none;">
+          <div class="input-box">
+            <input type="password" id="password" placeholder="Password">
+            <i class="fa-solid fa-eye-slash input-icon" id="togglePassword"></i>
+          </div>
+        </div>
+
+        <div class="forgot-pass">
+          <a href="#" id="left-link">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">Next</button>
+      </form>
+
+      <div class="go-back">
+        <a href="#"><i class="fa-solid fa-chevron-left"></i> Go back</a>
+      </div>
+    </div>
+
+    <div class="signup-prompt">
+      Don’t have an account? <a href="#">Sign up</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="language-select">
+      <select>
+        <option>English (US)</option>
+        <option>Español</option>
+        <option>Français</option>
+      </select>
+    </div>
+    <div class="copyright">
+      &copy; 2026 TikTok
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
